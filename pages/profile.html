@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <h1>My Student Profile</h1>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="profile.html">Profile</a>
+      <a href="event.html">Events</a>
+      <a href="faq.html">FAQ</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Logout</a>
+    </nav>
+    <p>View and update your basic student information.</p>
+    <form action="dashboard.html">
+      <label>Full Name:</label>
+      <input type="text" placeholder="Enter full name" />
+      <label>Email Address:</label>
+      <input type="email" placeholder="Enter email" />
+      <label>Phone Number:</label>
+      <input type="text" placeholder="Enter phone number" />
+      <label>Enrollment Number:</label>
+      <input type="text" placeholder="Enter enrollment number" />
+      <label>Department:</label>
+      <select>
+        <option>Computer Science</option>
+        <option>Information Technology</option>
+        <option>Commerce</option>
+        <option>Management</option>
+      </select>
+      <label>Semester:</label><input type="text" placeholder="Enter semester" />
+      <input type="submit" value="Update Profile" />
+      <input type="reset" value="Reset"/>
+    </form>
+    <p><a href="dashboard.html">Back to Dashboard</a></p>
+  </body>
+</html>
