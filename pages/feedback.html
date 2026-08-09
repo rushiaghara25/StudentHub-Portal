@@ -1,38 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Student Feedback</title>
-<link rel="stylesheet" href="../CSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback</title>
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
+
 <body>
 
 <h1>Student Feedback</h1>
+
 <nav>
     <a href="dashboard.html">Dashboard</a>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
     <a href="profile.html">Profile</a>
     <a href="event.html">Events</a>
     <a href="faq.html">FAQ</a>
     <a href="feedback.html">Feedback</a>
     <a href="contact.html">Contact</a>
-    <a href="login.html">Logout</a>
-
 </nav>
-<p>Share your experience and suggestions to help improve StudentHub.</p>
+
+<p>
+    Share your experience and suggestions to help improve StudentHub.
+</p>
+
 <form action="dashboard.html">
-<label>Full Name:</label><input type="text" required>
-<label>Enrollment Number:</label><input type="text" required>
-<label>Email Address:</label><input type="email" required>
-<label>Rating:</label>
-<input type="radio" name="rating"> Excellent
-<input type="radio" name="rating"> Good
-<input type="radio" name="rating"> Average
-<input type="radio" name="rating"> Poor
-<label>Feedback:</label><textarea rows="5"></textarea>
-<input type="submit" value="Submit Feedback"><input type="reset" value="Reset">
+
+    <label>Full Name:</label>
+    <input type="text" required>
+
+    <label>Enrollment Number:</label>
+    <input type="text" required>
+
+    <label>Email Address:</label>
+    <input type="email" required>
+
+    <label>Rating:</label>
+
+    <input type="radio" name="rating"> Excellent
+    <input type="radio" name="rating"> Good
+    <input type="radio" name="rating"> Average
+    <input type="radio" name="rating"> Poor
+    <br>
+    <label>Feedback:</label>
+    <textarea rows="5"></textarea>
+
+    <input type="submit" value="Submit Feedback">
+    <input type="reset" value="Reset">
+
 </form>
-<p><a href="dashboard.html">Back to Dashboard</a></p>
+
+<p>
+    <a href="dashboard.html">Back to Dashboard</a>
+</p>
+
+<p>
+    <a href="login.html">Logout</a>
+</p>
 
 </body>
 </html>
