@@ -316,6 +316,40 @@ footer {
 }
 
 
+    /* notification */
+
+    
+#notificationButton {
+    display: block;
+    margin: 15px auto;
+}
+
+#notification {
+    display: none;
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    background: #fff3cd;
+    border-left: 6px solid #ffc107;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+#notification h3 {
+    color: #856404;
+}
+
+#notification p {
+    width: 100%;
+    margin: 10px 0;
+    background: transparent;
+    border-left: none;
+    box-shadow: none;
+}
+
+
+
+
 @media (max-width: 768px) {
   form {
     width: 95%;
