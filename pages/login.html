@@ -15,17 +15,17 @@
     Login to continue to your StudentHub dashboard.
 </p>
 
-<form id="loginForm" action="dashboard.html">
+<div id="notification"></div>
+<form action="dashboard.html" method="get" id="login-form">
 
     <label>Email Address:</label>
-    <input type="email" required>
+        <input type="email" id="email" placeholder="Enter Your Email">
 
     <label>Password:</label>
-    <input type="password" required>
+        <input type="password" id="password" placeholder="Enter Your Password">
 
-    <input type="submit" value="Login">
-    <input type="reset" value="Clear">
-
+    <button type="submit" id="login-btn">Login</button>   
+    <button type="reset" id="clear-btn">Clear</button>
 </form>
 
 <p>

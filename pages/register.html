@@ -15,42 +15,29 @@
     Create your StudentHub account to access student services.
 </p>
 
-<form action="login.html">
+<form id="registerForm">
 
-    <label>Full Name:</label>
-    <input type="text" required>
+    <label>Name:</label>
+    <input type="text" id="name" required>
 
-    <label>Email Address:</label>
-    <input type="email" required>
+    <label>Email:</label>
+    <input type="email" id="email" required>
 
-    <label>Phone Number:</label>
-    <input type="text" required>
-
-    <label>Enrollment Number:</label>
-    <input type="text" required>
-
-    <label>Department:</label>
-    <select required>
-        <option value="">Select Department</option>
-        <option>Computer Science</option>
-        <option>Information Technology</option>
-        <option>Commerce</option>
-        <option>Management</option>
-    </select>
-
-    <label>Semester:</label>
-    <input type="text" required>
+    <label>Mobile:</label>
+    <input type="text" id="mobile" required>
 
     <label>Password:</label>
-    <input type="password" required>
+    <input type="password" id="password" required>
 
     <label>Confirm Password:</label>
-    <input type="password" required>
+    <input type="password" id="confirmPassword" required>
 
     <input type="submit" value="Register">
     <input type="reset" value="Clear">
 
 </form>
+
+<script src="../js/script.js"></script>
 
 <p>
     Already registered?
