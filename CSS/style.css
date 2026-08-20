@@ -350,25 +350,85 @@ footer {
 
 
 
-@media (max-width: 768px) {
-  form {
-    width: 95%;
-  }
-  p,
-  ul,
-  ol,
-  details,
-  table {
-    width: 95%;
-  }
-  nav a {
-    display: block;
-    margin: 8px 0;
-  }
-  button,
-  input[type="submit"],
-  input[type="reset"] {
-    width: 100%;
-    margin: 8px 0;
-  }
+/* Mobile */
+@media (max-width: 480px) {
+    form {
+        width: 95%;
+    }
+
+    p,
+    ul,
+    ol,
+    details,
+    table {
+        width: 95%;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    button,
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+        margin: 8px 0;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+    form {
+        width: 80%;
+    }
+
+    p,
+    ul,
+    ol,
+    details,
+    table {
+        width: 85%;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+
+    button,
+    input[type="submit"],
+    input[type="reset"] {
+        width: 45%;
+        margin: 8px 2%;
+    }
+}
+
+
+/* Laptop / Desktop */
+@media (min-width: 769px) {
+    form {
+        width: 60%;
+    }
+
+    p,
+    ul,
+    ol,
+    details,
+    table {
+        width: 80%;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+
+    button,
+    input[type="submit"],
+    input[type="reset"] {
+        width: auto;
+        margin: 5px;
+    }
 }
