@@ -125,7 +125,7 @@ if (registerForm) {
 }
 
 
-    //    COLLAPSIBLE FAQ
+    // COLLAPSIBLE FAQ
 
     const faqItems = document.querySelectorAll("details");
 
@@ -134,13 +134,22 @@ if (registerForm) {
         faq.addEventListener("toggle", function () {
 
             if (faq.open) {
+
                 console.log("FAQ answer opened.");
+
+                faqItems.forEach(function (otherFaq) {
+
+                    if (otherFaq !== faq) {
+                        otherFaq.removeAttribute("open");
+                    }
+
+                });
+
             }
 
         });
 
     });
-
 
 
     //     NOTIFICATION BANNER
