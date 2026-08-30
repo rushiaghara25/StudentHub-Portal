@@ -347,7 +347,78 @@ footer {
     box-shadow: none;
 }
 
+/* menu button */
 
+#menuButton {
+    display: block;
+    margin: 10px auto;
+}
+
+#menu {
+    display: none;
+}
+
+#menu.show-menu {
+    display: block;
+}
+
+/* Dark Mode */
+
+body.dark-mode {
+    background: #222;
+    color: #eee;
+}
+
+body.dark-mode h1 {
+    background: #111;
+}
+
+body.dark-mode h2 {
+    color: #66b3ff;
+}
+
+body.dark-mode p,
+body.dark-mode ul,
+body.dark-mode ol,
+body.dark-mode table,
+body.dark-mode form,
+body.dark-mode details {
+    background: #333;
+    color: #eee;
+}
+
+body.dark-mode nav {
+    background: #333;
+}
+
+body.dark-mode nav a {
+    color: #66b3ff;
+}
+
+body.dark-mode nav a:hover {
+    background: #0d6efd;
+    color: white;
+}
+
+body.dark-mode th {
+    background: #111;
+}
+
+body.dark-mode tr:nth-child(even) {
+    background: #444;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background: #444;
+    color: white;
+    border-color: #777;
+}
+
+body.dark-mode footer {
+    background: #111;
+}
 
 
 /* Mobile */

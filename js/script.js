@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", function () {
 
     //     LOGIN FORM - EVENT HANDLING
@@ -178,6 +176,52 @@ if (registerForm) {
         closeNotification.addEventListener("click", function () {
 
             notification.style.display = "none";
+
+        });
+
+    }
+
+
+        //   HAMBURGER MENU
+
+    const menuButton = document.getElementById("menuButton");
+    const menu = document.getElementById("menu");
+
+    if (menuButton && menu) {
+
+        menuButton.addEventListener("click", function () {
+
+            menu.classList.toggle("show-menu");
+
+        });
+
+    }
+
+
+        //   LIGHT / DARK THEME SWITCHER
+
+    const themeButton =
+        document.getElementById("themeButton");
+
+    if (themeButton) {
+
+        themeButton.addEventListener("click", function () {
+
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+
+                themeButton.textContent = "Light Mode";
+
+                localStorage.setItem("theme", "dark");
+
+            } else {
+
+                themeButton.textContent = "Dark Mode";
+
+                localStorage.setItem("theme", "light");
+
+            }
 
         });
 
