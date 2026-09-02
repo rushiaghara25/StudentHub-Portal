@@ -64,7 +64,6 @@ if (registerForm) {
         const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
 
-        // Name validation
         if (!nameRegex.test(name)) {
 
             alert("Enter a valid name.");
@@ -72,8 +71,6 @@ if (registerForm) {
             return;
         }
 
-
-        // Email validation
         if (!emailRegex.test(email)) {
 
             alert("Enter a valid email address.");
@@ -81,8 +78,6 @@ if (registerForm) {
             return;
         }
 
-
-        // Mobile validation
         if (!mobileRegex.test(mobile)) {
 
             alert("Enter a valid 10-digit mobile number.");
@@ -90,21 +85,13 @@ if (registerForm) {
             return;
         }
 
-
-        // Password validation
         if (!passwordRegex.test(password)) {
 
-            alert(
-                "Password must contain at least 8 characters, " +
-                "one uppercase letter, one lowercase letter, " +
-                "one number and one special character."
-            );
+            alert("Password must contain at least 8 characters, one uppercase letter, one lowercase letter, one number and one special character.");
 
             return;
         }
 
-
-        // Confirm password validation
         if (password !== confirmPassword) {
 
             alert("Password and Confirm Password do not match.");
@@ -112,8 +99,6 @@ if (registerForm) {
             return;
         }
 
-
-        // Registration successful
         alert("Registration successful! Please login to continue.");
 
         window.location.href = "login.html";
