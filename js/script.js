@@ -212,3 +212,26 @@ if (registerForm) {
 
     }
 });
+
+
+
+        //  JSON    
+
+    fetch("../data/student.json")
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+
+            document.getElementById("studentName").textContent = data.name;
+            document.getElementById("enrollment").textContent = data.enrollment;
+            document.getElementById("course").textContent = data.course;
+            document.getElementById("semester").textContent = data.semester;
+            document.getElementById("department").textContent = data.department;
+
+        })
+        .catch(function(error) {
+
+            console.log("Error loading JSON:", error);
+
+        });
