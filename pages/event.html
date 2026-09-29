@@ -1,13 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentHub Events</title>
-    <link rel="stylesheet" href="../CSS/style.css" />
-  </head>
-  <body>
-    <h1>College Events</h1>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+<h1>StudentHub Events</h1>
 
 <button id="menuButton">Menu</button>
 
@@ -23,30 +25,29 @@
 </nav>
 
 <button id="themeButton">Dark Mode</button>
-    <p>Explore college events</p>
-    <table>
-      <tr>
-        <th>Date</th>
-        <th>Event</th>
-      </tr>
-      <tr>
-        <td>12-18 August 2026</td>
-        <td>Anti Ragging Week</td>
-      </tr>
-      <tr>
-        <td>19-20 August 2026</td>
-        <td>3D Modelling Workshop</td>
-      </tr>
-      <tr>
-        <td>05 September 2026</td>
-        <td>Teachers' Day Celebration</td>
-      </tr>
-      <tr>
-        <td>15 September 2026</td>
-        <td>Engineers' Day Celebration</td>
-      </tr>
-    </table>
-    <script src="../js/script.js"></script>
 
-  </body>
+<h2>Upcoming Events</h2>
+
+<input type="text" id="search" placeholder="Search event">
+
+<select id="filter">
+    <option value="All">All Categories</option>
+    <option value="Technical">Technical</option>
+    <option value="Workshop">Workshop</option>
+    <option value="Cultural">Cultural</option>
+</select>
+
+<select id="sort">
+    <option value="asc">Date: Old to New</option>
+    <option value="desc">Date: New to Old</option>
+</select>
+
+<ul id="eventList"></ul>
+
+<button id="previous">Previous</button>
+<button id="next">Next</button>
+
+<script src="../js/script.js"></script>
+
+</body>
 </html>

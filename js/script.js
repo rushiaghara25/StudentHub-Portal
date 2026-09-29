@@ -235,3 +235,117 @@ if (registerForm) {
             console.log("Error loading JSON:", error);
 
         });
+
+
+        // EVENT LIST
+
+    let events = [];
+    let currentPage = 1;
+    let itemsPerPage = 3;
+
+    fetch("../data/event.json")
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+            events = data;
+            displayEvents();
+        })
+        .catch(function(error) {
+            console.log("Error loading events:", error);
+        });
+
+
+    function displayEvents() {
+
+        let search = document.getElementById("search").value.toLowerCase();
+        let filter = document.getElementById("filter").value;
+        let sort = document.getElementById("sort").value;
+
+        let result = events.filter(function(event) {
+
+            let matchesSearch =
+                event.name.toLowerCase().includes(search);
+
+            let matchesFilter =
+                filter === "All" || event.category === filter;
+
+            return matchesSearch && matchesFilter;
+        });
+
+
+        result.sort(function(a, b) {
+
+            if (sort === "asc") {
+                return new Date(a.date) - new Date(b.date);
+            } else {
+                return new Date(b.date) - new Date(a.date);
+            }
+
+        });
+
+
+        let start = (currentPage - 1) * itemsPerPage;
+        let end = start + itemsPerPage;
+
+        let pageEvents = result.slice(start, end);
+
+        let list = document.getElementById("eventList");
+
+        list.innerHTML = "";
+
+
+        pageEvents.forEach(function(event) {
+
+            let li = document.createElement("li");
+
+            li.innerHTML =
+                "<strong>" + event.name + "</strong><br>" +
+                "Category: " + event.category + "<br>" +
+                "Date: " + event.date + "<br>" +
+                "Location: " + event.location;
+
+            list.appendChild(li);
+
+        });
+    }
+
+
+    document.getElementById("search").addEventListener("input", function() {
+        currentPage = 1;
+        displayEvents();
+    });
+
+
+    document.getElementById("filter").addEventListener("change", function() {
+        currentPage = 1;
+        displayEvents();
+    });
+
+
+    document.getElementById("sort").addEventListener("change", function() {
+        displayEvents();
+    });
+
+
+    document.getElementById("next").addEventListener("click", function() {
+
+        let totalPages =
+            Math.ceil(events.length / itemsPerPage);
+
+        if (currentPage < totalPages) {
+            currentPage++;
+            displayEvents();
+        }
+
+    });
+
+
+    document.getElementById("previous").addEventListener("click", function() {
+
+        if (currentPage > 1) {
+            currentPage--;
+            displayEvents();
+        }
+
+    });

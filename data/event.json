@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Hackathon",
+        "category": "Technical",
+        "date": "2026-09-20",
+        "location": "Depstar"
+    },
+    {
+        "name": "Web Development Workshop",
+        "category": "Workshop",
+        "date": "2026-09-22",
+        "location": "Computer Lab"
+    },
+    {
+        "name": "Teachers Day Celebration",
+        "category": "Cultural",
+        "date": "2026-09-25",
+        "location": "Auditorium"
+    },
+    {
+        "name": "Project Exhibition",
+        "category": "Technical",
+        "date": "2026-09-28",
+        "location": "Main Hall"
+    },
+    {
+        "name": "3D Modelling Workshop",
+        "category": "Workshop",
+        "date": "2026-10-02",
+        "location": "Design Lab"
+    }
+]
