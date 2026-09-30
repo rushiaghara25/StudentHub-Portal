@@ -5,7 +5,8 @@
     font-family: Arial, sans-serif;
 }
 
-   /* BODY */
+
+/* Body */
 
 body {
     background: #eef3ff;
@@ -14,7 +15,8 @@ body {
     min-height: 100vh;
 }
 
-   /* MAIN HEADER */
+
+/* Main Header */
 
 h1 {
     background: linear-gradient(135deg, #0d47a1, #1976d2, #7b1fa2);
@@ -26,7 +28,8 @@ h1 {
     box-shadow: 0 4px 12px rgba(13, 71, 161, 0.3);
 }
 
-   /* SECTION HEADINGS */
+
+/* Section Headings */
 
 h2 {
     width: 90%;
@@ -53,7 +56,8 @@ h4 {
     color: #7b1fa2;
 }
 
-   /* PARAGRAPHS / CONTENT */
+
+/* Paragraphs */
 
 p {
     width: 90%;
@@ -65,7 +69,8 @@ p {
     box-shadow: 0 4px 12px rgba(25, 118, 210, 0.12);
 }
 
-   /* NAVIGATION */
+
+/* Navigation */
 
 nav {
     background: white;
@@ -92,7 +97,8 @@ nav a:hover {
     color: white;
 }
 
-   /* LISTS */
+
+/* Lists */
 
 ul,
 ol {
@@ -114,7 +120,8 @@ li::marker {
     font-weight: bold;
 }
 
-   /* LINKS */
+
+/* Links */
 
 a {
     color: #1565c0;
@@ -132,7 +139,8 @@ li a:hover {
     text-decoration: underline;
 }
 
-   /* TABLE */
+
+/* Table */
 
 table {
     width: 90%;
@@ -171,8 +179,7 @@ tr:hover {
 }
 
 
-   /* FORM */
-
+/* Form */
 
 form {
     width: 60%;
@@ -192,9 +199,7 @@ label {
     color: #37474f;
 }
 
-
-   /* INPUTS */
-
+/* Inputs */
 
 input,
 select,
@@ -217,16 +222,15 @@ textarea:focus {
 }
 
 
-   /* RADIO BUTTON */
-
+/* Radio Button */
 
 input[type="radio"] {
     width: auto;
     margin-right: 5px;
 }
 
-/* BUTTONS */
 
+/* Buttons */
 
 button,
 input[type="submit"],
@@ -255,8 +259,7 @@ input[type="reset"]:hover {
 }
 
 
-   /* FAQ */
-
+/* FAQ */
 
 details {
     width: 90%;
@@ -288,8 +291,7 @@ details p {
 }
 
 
-   /* EMAIL AND PHONE */
-
+/* Email and Phone */
 
 a[href^="mailto"],
 a[href^="tel"] {
@@ -304,8 +306,7 @@ a[href^="tel"]:hover {
 }
 
 
-   /* FOOTER */
-
+/* Footer */
 
 footer {
     background: linear-gradient(135deg, #0d47a1, #1976d2, #7b1fa2);
@@ -316,9 +317,8 @@ footer {
 }
 
 
-    /* notification */
+/* Notification */
 
-    
 #notificationButton {
     display: block;
     margin: 15px auto;
@@ -347,7 +347,7 @@ footer {
     box-shadow: none;
 }
 
-/* menu button */
+/* Menu Button */
 
 #menuButton {
     display: block;
@@ -361,6 +361,7 @@ footer {
 #menu.show-menu {
     display: block;
 }
+
 
 /* Dark Mode */
 
@@ -422,7 +423,9 @@ body.dark-mode footer {
 
 
 /* Mobile */
+
 @media (max-width: 480px) {
+
     form {
         width: 95%;
     }
@@ -450,7 +453,9 @@ body.dark-mode footer {
 
 
 /* Tablet */
+
 @media (min-width: 481px) and (max-width: 768px) {
+
     form {
         width: 80%;
     }
@@ -477,8 +482,10 @@ body.dark-mode footer {
 }
 
 
-/* Laptop / Desktop */
+/* Laptop and Desktop */
+
 @media (min-width: 769px) {
+
     form {
         width: 60%;
     }
