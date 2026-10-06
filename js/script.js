@@ -101,7 +101,7 @@ if (registerForm) {
 
         alert("Registration successful! Please login to continue.");
 
-        window.location.href = "login.html";
+        window.location.href = "login.php";
 
     });
 
